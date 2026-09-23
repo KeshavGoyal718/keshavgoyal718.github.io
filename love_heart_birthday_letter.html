@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>For My Love ❤️</title>
+<style>
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 800px;
+    background: #000;
+    overflow: hidden;
+  }
+
+  canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .message {
+    position: absolute;
+    left: 50%;
+    top: 43.75%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 90%;
+    text-align: center;
+    color: #ffd6df;
+    font-size: clamp(22px, 5.5vw, 38px);
+    line-height: 1.12;
+    font-weight: 700;
+    text-shadow: 0 0 12px rgba(255, 130, 160, .35);
+    pointer-events: none;
+  }
+
+  .countdown-title {
+    position: absolute;
+    left: 50%;
+    top: 81.25%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 95%;
+    text-align: center;
+    color: #e98da1;
+    font-size: clamp(12px, 3.5vw, 22px);
+    font-weight: 700;
+    letter-spacing: .4px;
+    pointer-events: none;
+  }
+
+  .countdown {
+    position: absolute;
+    left: 50%;
+    top: 85.5%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 95%;
+    text-align: center;
+    color: #ffd6df;
+    font-size: clamp(15px, 4.2vw, 27px);
+    font-weight: 700;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+
+  .letter-button {
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    transform: translateX(-50%);
+    z-index: 10;
+    border: 1px solid #e98da1;
+    background: rgba(20, 0, 7, .9);
+    color: #ffd6df;
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(233,141,161,.18);
+  }
+  .letter-overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    background: rgba(0,0,0,.96);
+    overflow-y: auto;
+    padding: 28px 18px;
+  }
+  .letter-overlay.open { display: block; }
+  .letter {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff8f5;
+    color: #3b2027;
+    border-radius: 6px;
+    padding: 30px 24px 34px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.5);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.65;
+    font-size: 16px;
+    white-space: pre-line;
+  }
+  .letter h2 {
+    text-align: center;
+    margin: 0 0 22px;
+    color: #8d3048;
+    font-size: 25px;
+  }
+  .close-letter {
+    display: block;
+    margin: 24px auto 0;
+    border: 1px solid #8d3048;
+    background: transparent;
+    color: #8d3048;
+    padding: 9px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .hint {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #63303d;
+    font-size: 10px;
+    z-index: 5;
+  }
+</style>
+</head>
+
+<body>
+<div class="page">
+  <canvas id="heart"></canvas>
+
+  <div class="message">
+    I LOVE YOUUUUU<br>
+    MY LOVE!!!!!!
+  </div>
+
+  <button class="letter-button" id="openLetter">💌 Open My Letter</button>
+
+  <div class="countdown-title">COUNTDOWN TO YOUR BIRTHDAY ❤️</div>
+  <div class="countdown" id="countdown">Loading...</div>
+
+  <div class="letter-overlay" id="letterOverlay">
+    <div class="letter">
+      <h2>Dear Pallavii!!! ❤️</h2>
+      <div id="letterText">24 September, 2026
+
+Dear Pallavii!!!
+
+Sooo it's been a very long time, bhut time hogya h maine tumhare liye koi bhi efforts nhi kiye ya m bolu ki m kar hi nhi payaa. In 7-8 mahino meri choti si jaan n bhut kuch sahaa h akele jidr m unfortunately uske sth nhi kdha rha payaa. Muje ye bhi ache se pta h ki abhi tumhari halatt thik nhi h lekin YOU TOO KNOW ME WELL!!!! Muje bhi tbh tk chain nhi pdega jbh tk tum bilkul theek nhi ho jati. I once again want ki m tumhara bday bhut special bnau. Or is br to itna special bnauu ki tum apna 18th  bday jindagibhar yaad rkhoo bcheee!!!!
+
+Bhut hogyi senti battein ab muje tumhe thoda s pyar krne dooo 🫠❤️ Sooo, tumhe to khair yaad hoga nhi lekin muje 17 April, 2025 ki date ache se yaad jbh tumne special 4:00 bje uth kr mere liye mera lyff k phla cutuuu sa love letter likha thaaaa or usmai apnaa pyar or feelings sbh aise utardi ki mujhe aj bhi uss letter k 1 1 shbd yaad h.... Wo khikhi or hehehe 😂❤️ Wo pyari si kissiiiii UMAHHHHHHHHHHHHH!!!!!! wali. 😘😘 Wo promise wo sbh, as it is yaad h. Lekin usss letter k bd hmesha mujhe lgta tha ki m kbhi tumhe aisa letter deke khush nhi kr paya or nh hi kr pataa maybe. Handwritten to aaj bhi nhi likh parh lekin ye mera digital letter hi smjh lo tumm. Apna pura dil utarne ki koshish kri h maine in kuch chndd shabdo m.
+
+Chloo bhut huaa busss ab m tumhare liye bgwan se sbh kuch mangna chatha hu, m chatha hu bgwan muje itna kabil bnaye ki m tumhe apni palako pr bitha kr rkh skuu hmehsa k liee, tumhari jindagi m khushiaaa bhr deee itni ki tum smbhal bhi naa paaooo!!!!! Or rhi bt pyaar ki to wo to m tumse beshumar krta hu ab to phle s bhi zyada krta hu. M bus itna chatha hu ki ab tum bus khush raho kbhi koi dukh na jhelna pde tumko.,, or hn sbse important chij hum hmehsa sth rheee ab., I HOPE WE ALWAYS FIND A WAY BACK TO EACH OTHER!!!!! Ye chij m rt ke 4:00bje to nhi lekin rt ko jagh kr 1:44 pr likh rkh hu... Samjh nhi ata sch m kya likhna hota h love letter mai shi khaa tha tumne 😂. I think itni length bhut h 1 page bhrne ko!!!!
+
+I LOVEEEEEEEEE YOUUUUUUUU SOOOOOOOO MUCHHHHHHH MERAAAAAA BCHAAAAAA!!!!!!! May Shyam baba always bless us with all his blessings. Tum hmesha khush raho khub kamyaaab ho or mere sth raho hameshaaaaa. PRAYING FOR US TOGETHER AND FOREVER.
+
+With love,
+Tumhara Keshav</div>
+      <button class="close-letter" id="closeLetter">Close Letter ❤️</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const canvas = document.getElementById("heart");
+const ctx = canvas.getContext("2d");
+
+let width, height, centerX, centerY, scale;
+const NUMBER_OF_STRINGS = 240;
+let points = [];
+let current = 0;
+let started = false;
+
+function resize() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  width = window.innerWidth;
+  height = window.innerHeight;
+
+  canvas.width = width * dpr;
+  canvas.height = height * dpr;
+  canvas.style.width = width + "px";
+  canvas.style.height = height + "px";
+
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  centerX = width / 2;
+  centerY = height * 0.4375;
+
+  // Scale heart to fit comfortably on phones and desktops.
+  scale = Math.min(width / 42, height / 42);
+
+  createHeartPoints();
+
+  if (!started) {
+    draw();
+  }
+}
+
+function createHeartPoints() {
+  points = [];
+
+  for (let i = 0; i < NUMBER_OF_STRINGS; i++) {
+    const t = (2 * Math.PI * i) / NUMBER_OF_STRINGS;
+
+    const x = 16 * Math.pow(Math.sin(t), 3);
+    const y =
+      13 * Math.cos(t)
+      - 5 * Math.cos(2 * t)
+      - 2 * Math.cos(3 * t)
+      - Math.cos(4 * t);
+
+    points.push({
+      x: centerX + x * scale,
+      y: centerY - y * scale
+    });
+  }
+
+  // Same fixed randomized order as the Python version.
+  let seed = 10;
+  function random() {
+    const x = Math.sin(seed++) * 10000;
+    return x - Math.floor(x);
+  }
+
+  for (let i = points.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [points[i], points[j]] = [points[j], points[i]];
+  }
+}
+
+function draw() {
+  ctx.fillStyle = "#000";
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.lineWidth = Math.max(0.7, Math.min(1.2, width / 700));
+  ctx.strokeStyle = "#9b2945";
+
+  for (let i = 0; i < current; i++) {
+    ctx.beginPath();
+    ctx.moveTo(centerX, centerY);
+    ctx.lineTo(points[i].x, points[i].y);
+    ctx.stroke();
+  }
+}
+
+function addString() {
+  if (current < NUMBER_OF_STRINGS) {
+    current++;
+    draw();
+    setTimeout(addString, 15);
+  }
+}
+
+// Countdown to 30 September at 12:00 AM.
+// If that date has already passed in a year, use the next September 30.
+function updateCountdown() {
+  const now = new Date();
+  let birthday = new Date(now.getFullYear(), 8, 30, 0, 0, 0);
+
+  if (birthday <= now) {
+    birthday = new Date(now.getFullYear() + 1, 8, 30, 0, 0, 0);
+  }
+
+  const difference = birthday - now;
+
+  const totalSeconds = Math.floor(difference / 1000);
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  document.getElementById("countdown").textContent =
+    `${days} DAYS  •  ${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+
+  setTimeout(updateCountdown, 250);
+}
+
+window.addEventListener("resize", resize);
+
+resize();
+updateCountdown();
+setTimeout(() => {
+  started = true;
+  addString();
+}, 400);
+
+document.getElementById("openLetter").addEventListener("click", () => {
+  document.getElementById("letterOverlay").classList.add("open");
+});
+document.getElementById("closeLetter").addEventListener("click", () => {
+  document.getElementById("letterOverlay").classList.remove("open");
+});
+</script>
+</body>
+</html>
